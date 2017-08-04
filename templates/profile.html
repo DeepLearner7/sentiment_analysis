@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css' )}}">
+</head>
+<body style="text-align: center;">
+
+<form method="POST" action="/sentiment">
+
+<h1>Enter keyword to search sentiment</h1>
+<input id="inp" style="color: ;" type="text" name="query"><br><br>
+<input type="submit" name="submit" style="height: 35px; font-size: 15px;"">
+
+</form>
+
+</body>
+
+</html>

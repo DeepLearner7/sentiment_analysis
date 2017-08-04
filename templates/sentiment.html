@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sentiment analysis</title>
+</head>
+<body>
+
+	<h1>Related tweets</h1><br>
+	{% for index,row in sentiments.iterrows() %}
+		
+		<p>Tweet: <span style="size: 20px;">{{ row['tweet'] }}</span></p>
+		{% if(row['Sentiment']==0) %}
+			<p style="color: red; size: 16px;">Sentiment: Negative</p>
+		{% else %}
+			<p style="color: green; size: 16px;"">Sentiment: Positive</p>
+
+		{% endif %}
+
+	{% endfor %}
+
+
+</body>
+</html>
+
+
